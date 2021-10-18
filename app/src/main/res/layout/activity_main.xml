@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/MainHeader"
+        android:textAlignment="center"
+        android:textSize="@dimen/HeaderSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.437">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/iBulbasurNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iBulbasur"
+                    android:text="Nº001"
+                    android:textSize="@dimen/SubHeaderSize" />
+
+                <ImageButton
+                    android:id="@+id/iBulbasur"
+                    android:layout_width="@dimen/ImageWidth"
+                    android:layout_height="@dimen/ImageHeight"
+                    android:onClick="PokemonButtonClick"
+                    android:src="@drawable/ic_bulbasur" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/iCharmanderNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iCharmander"
+                    android:text="Nº004"
+                    android:textSize="@dimen/SubHeaderSize" />
+
+                <ImageButton
+                    android:id="@+id/iCharmander"
+                    android:layout_width="@dimen/ImageWidth"
+                    android:layout_height="@dimen/ImageHeight"
+                    android:onClick="PokemonButtonClick"
+                    android:src="@drawable/ic_charmander"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/iSquirtleNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iSquirtle"
+                    android:text="Nº007"
+                    android:textSize="@dimen/SubHeaderSize" />
+
+                <ImageButton
+                    android:id="@+id/iSquirtle"
+                    android:layout_width="@dimen/ImageWidth"
+                    android:layout_height="@dimen/ImageHeight"
+                    android:onClick="PokemonButtonClick"
+                    android:src="@drawable/ic_squirtle" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/iPikachuNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iPikachu"
+                    android:text="Nº025"
+                    android:textSize="@dimen/SubHeaderSize" />
+
+                <ImageButton
+                    android:id="@+id/iPikachu"
+                    android:layout_width="@dimen/ImageWidth"
+                    android:layout_height="@dimen/ImageHeight"
+                    android:onClick="PokemonButtonClick"
+                    android:src="@drawable/ic_pikachu" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

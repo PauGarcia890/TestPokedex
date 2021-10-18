@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="HeaderSize">40sp</dimen>
+    <dimen name="ImageWidth">200dp</dimen>
+    <dimen name="SubHeaderSize">20sp</dimen>
+    <dimen name="ImageHeight">200dp</dimen>
+</resources>
